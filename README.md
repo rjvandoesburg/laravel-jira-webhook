@@ -56,3 +56,9 @@ Please see [https://laravel.com/docs/events#defining-listeners](https://laravel.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## To do
+
+- Make url configurable
+- Catch All events [Available events](https://developer.atlassian.com/jiradev/jira-apis/webhooks#Webhooks-configureConfiguringawebhook)
+- Implement broadcasting events

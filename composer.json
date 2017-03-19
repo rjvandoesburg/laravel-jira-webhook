@@ -1,5 +1,8 @@
 {
     "name": "rjvandoesburg/laravel-jira-webhook",
+    "description": "An endpoint for your Laravel application to listen to Atlassian's Jira webhook events ",
+    "keywords": ["laravel", "laravel-5-package", "atlassian", "atlassian-jira", "jira"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Robert-John van Doesburg",
@@ -7,11 +10,12 @@
         }
     ],
     "require": {
-        "illuminate/support": "^5.4",
-        "illuminate/events": "^5.4",
-        "illuminate/http": "^5.4",
-        "illuminate/container": "^5.4",
-        "illuminate/config": "^5.4"
+        "php" : ">=5.6.0",
+        "illuminate/support": "^5.3|^5.4",
+        "illuminate/events": "^5.3|^5.4",
+        "illuminate/http": "^5.3|^5.4",
+        "illuminate/container": "^5.3|^5.4",
+        "illuminate/config": "^5.3|^5.4"
     },
     "autoload": {
         "psr-4": {
