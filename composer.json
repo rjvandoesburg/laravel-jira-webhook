@@ -1,0 +1,21 @@
+{
+    "name": "rjvandoesburg/laravel-jira-webhook",
+    "authors": [
+        {
+            "name": "Robert-John van Doesburg",
+            "email": "rjvandoesburg@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.4",
+        "illuminate/events": "^5.4",
+        "illuminate/http": "^5.4",
+        "illuminate/container": "^5.4",
+        "illuminate/config": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atlassian\\JiraWebhook\\": "src/"
+        }
+    }
+}
