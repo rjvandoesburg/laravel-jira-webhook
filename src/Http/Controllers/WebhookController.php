@@ -5,11 +5,14 @@ namespace Atlassian\JiraWebhook\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Logging\Log;
 use Illuminate\Support\Facades\Config;
-use Illuminate\Events\Dispatcher as EventDispatcher;
+use Illuminate\Contracts\Events\Dispatcher as EventDispatcher;
 
+/**
+ * Class WebhookController
+ * @package Atlassian\JiraWebhook\Http\Controllers
+ */
 class WebhookController
 {
-
     /**
      * Post route to handle the webhook events fired from Jira.
      *

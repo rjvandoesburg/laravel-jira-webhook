@@ -1,0 +1,45 @@
+{
+  "timestamp": 1490299071222,
+  "webhookEvent": "worklog_created",
+  "worklog": {
+    "self": "http://localhost:8080/rest/api/2/issue/10032/worklog/10000",
+    "author": {
+      "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+      "name": "rjvandoesburg",
+      "key": "rjvandoesburg",
+      "emailAddress": "example@test.com",
+      "avatarUrls": {
+        "48x48": "",
+        "24x24": "",
+        "16x16": "",
+        "32x32": ""
+      },
+      "displayName": "Robert-John van Doesburg",
+      "active": true,
+      "timeZone": "Europe/Amsterdam"
+    },
+    "updateAuthor": {
+      "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+      "name": "rjvandoesburg",
+      "key": "rjvandoesburg",
+      "emailAddress": "example@test.com",
+      "avatarUrls": {
+        "48x48": "",
+        "24x24": "",
+        "16x16": "",
+        "32x32": ""
+      },
+      "displayName": "Robert-John van Doesburg",
+      "active": true,
+      "timeZone": "Europe/Amsterdam"
+    },
+    "comment": "Pushed the code to staging",
+    "created": "2017-03-23T20:57:51.222+0100",
+    "updated": "2017-03-23T20:57:51.222+0100",
+    "started": "2017-03-23T20:57:00.000+0100",
+    "timeSpent": "10m",
+    "timeSpentSeconds": 600,
+    "id": "10000",
+    "issueId": "10032"
+  }
+}

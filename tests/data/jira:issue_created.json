@@ -1,0 +1,156 @@
+{
+  "timestamp": 1490296398735,
+  "webhookEvent": "jira:issue_created",
+  "issue_event_type_name": "issue_created",
+  "user": {
+    "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+    "name": "rjvandoesburg",
+    "key": "rjvandoesburg",
+    "emailAddress": "example@test.com",
+    "avatarUrls": {
+      "48x48": "",
+      "24x24": "",
+      "16x16": "",
+      "32x32": ""
+    },
+    "displayName": "Robert-John van Doesburg",
+    "active": true,
+    "timeZone": "Europe/Amsterdam"
+  },
+  "issue": {
+    "id": "10200",
+    "self": "http://localhost:8080/rest/api/2/issue/10200",
+    "key": "ZAVA-24",
+    "fields": {
+      "issuetype": {
+        "self": "http://localhost:8080/rest/api/2/issuetype/10003",
+        "id": "10003",
+        "description": "A task that needs to be done.",
+        "iconUrl": "http://localhost:8080/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318
+      },
+      "components": [],
+      "timespent": null,
+      "timeoriginalestimate": null,
+      "description": "This is some dummy text",
+      "project": {
+        "self": "http://localhost:8080/rest/api/2/project/10002",
+        "id": "10002",
+        "key": "ZAVA",
+        "name": "Zava",
+        "avatarUrls": {
+          "48x48": "http://localhost:8080/secure/projectavatar?avatarId=10324",
+          "24x24": "http://localhost:8080/secure/projectavatar?size=small&avatarId=10324",
+          "16x16": "http://localhost:8080/secure/projectavatar?size=xsmall&avatarId=10324",
+          "32x32": "http://localhost:8080/secure/projectavatar?size=medium&avatarId=10324"
+        }
+      },
+      "fixVersions": [],
+      "aggregatetimespent": null,
+      "resolution": null,
+      "timetracking": {},
+      "customfield_10005": "0|i000c7:",
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "New issue",
+      "lastViewed": null,
+      "watches": {
+        "self": "http://localhost:8080/rest/api/2/issue/ZAVA-24/watchers",
+        "watchCount": 0,
+        "isWatching": false
+      },
+      "creator": {
+        "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+        "name": "rjvandoesburg",
+        "key": "rjvandoesburg",
+        "emailAddress": "example@test.com",
+        "avatarUrls": {
+          "48x48": "",
+          "24x24": "",
+          "16x16": "",
+          "32x32": ""
+        },
+        "displayName": "Robert-John van Doesburg",
+        "active": true,
+        "timeZone": "Europe/Amsterdam"
+      },
+      "subtasks": [],
+      "created": "2017-03-23T20:13:18.605+0100",
+      "reporter": {
+        "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+        "name": "rjvandoesburg",
+        "key": "rjvandoesburg",
+        "emailAddress": "example@test.com",
+        "avatarUrls": {
+          "48x48": "",
+          "24x24": "",
+          "16x16": "",
+          "32x32": ""
+        },
+        "displayName": "Robert-John van Doesburg",
+        "active": true,
+        "timeZone": "Europe/Amsterdam"
+      },
+      "customfield_10000": null,
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "priority": {
+        "self": "http://localhost:8080/rest/api/2/priority/3",
+        "iconUrl": "http://localhost:8080/images/icons/priorities/medium.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "customfield_10004": null,
+      "environment": null,
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "comment": {
+        "comments": [],
+        "maxResults": 0,
+        "total": 0,
+        "startAt": 0
+      },
+      "issuelinks": [],
+      "votes": {
+        "self": "http://localhost:8080/rest/api/2/issue/ZAVA-24/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "assignee": null,
+      "updated": "2017-03-23T20:13:18.605+0100",
+      "status": {
+        "self": "http://localhost:8080/rest/api/2/status/10000",
+        "description": "",
+        "iconUrl": "http://localhost:8080/",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "http://localhost:8080/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      }
+    }
+  }
+}

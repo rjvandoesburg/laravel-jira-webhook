@@ -1,0 +1,370 @@
+{
+  "timestamp": 1490301271979,
+  "webhookEvent": "jira:worklog_updated",
+  "issue_event_type_name": "issue_work_logged",
+  "user": {
+    "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+    "name": "rjvandoesburg",
+    "key": "rjvandoesburg",
+    "emailAddress": "example@test.com",
+    "avatarUrls": {
+      "48x48": "",
+      "24x24": "",
+      "16x16": "",
+      "32x32": ""
+    },
+    "displayName": "Robert-John van Doesburg",
+    "active": true,
+    "timeZone": "Europe/Amsterdam"
+  },
+  "issue": {
+    "id": "10032",
+    "self": "http://localhost:8080/rest/api/2/issue/10032",
+    "key": "ZAVA-10",
+    "fields": {
+      "issuetype": {
+        "self": "http://localhost:8080/rest/api/2/issuetype/10002",
+        "id": "10002",
+        "description": "gh.issue.story.desc",
+        "iconUrl": "http://localhost:8080/images/icons/issuetypes/story.svg",
+        "name": "Story",
+        "subtask": false
+      },
+      "components": [],
+      "timespent": 600,
+      "timeoriginalestimate": null,
+      "description": null,
+      "project": {
+        "self": "http://localhost:8080/rest/api/2/project/10002",
+        "id": "10002",
+        "key": "ZAVA",
+        "name": "Zava",
+        "avatarUrls": {
+          "48x48": "http://localhost:8080/secure/projectavatar?avatarId=10324",
+          "24x24": "http://localhost:8080/secure/projectavatar?size=small&avatarId=10324",
+          "16x16": "http://localhost:8080/secure/projectavatar?size=xsmall&avatarId=10324",
+          "32x32": "http://localhost:8080/secure/projectavatar?size=medium&avatarId=10324"
+        }
+      },
+      "fixVersions": [
+        {
+          "self": "http://localhost:8080/rest/api/2/version/10004",
+          "id": "10004",
+          "name": "Version 2.0",
+          "archived": false,
+          "released": false,
+          "releaseDate": "2017-03-11"
+        }
+      ],
+      "aggregatetimespent": 600,
+      "resolution": null,
+      "timetracking": {
+        "remainingEstimate": "5m",
+        "timeSpent": "10m",
+        "remainingEstimateSeconds": 300,
+        "timeSpentSeconds": 600
+      },
+      "customfield_10005": "0|i00073:",
+      "customfield_10006": 5.0,
+      "attachment": [],
+      "aggregatetimeestimate": 300,
+      "resolutiondate": null,
+      "workratio": -1,
+      "summary": "As a developer, I can update story and task status with drag and drop (click the triangle at far left of this story to show sub-tasks)",
+      "lastViewed": "2017-03-23T21:34:31.973+0100",
+      "watches": {
+        "self": "http://localhost:8080/rest/api/2/issue/ZAVA-10/watchers",
+        "watchCount": 0,
+        "isWatching": false
+      },
+      "creator": {
+        "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+        "name": "rjvandoesburg",
+        "key": "rjvandoesburg",
+        "emailAddress": "example@test.com",
+        "avatarUrls": {
+          "48x48": "",
+          "24x24": "",
+          "16x16": "",
+          "32x32": ""
+        },
+        "displayName": "Robert-John van Doesburg",
+        "active": true,
+        "timeZone": "Europe/Amsterdam"
+      },
+      "subtasks": [
+        {
+          "id": "10033",
+          "key": "ZAVA-11",
+          "self": "http://localhost:8080/rest/api/2/issue/10033",
+          "fields": {
+            "summary": "Update task status by dragging and dropping from column to column >> Try dragging this task to \"Done\"",
+            "status": {
+              "self": "http://localhost:8080/rest/api/2/status/3",
+              "description": "This issue is being actively worked on at the moment by the assignee.",
+              "iconUrl": "http://localhost:8080/images/icons/statuses/inprogress.png",
+              "name": "In Progress",
+              "id": "3",
+              "statusCategory": {
+                "self": "http://localhost:8080/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Progress"
+              }
+            },
+            "priority": {
+              "self": "http://localhost:8080/rest/api/2/priority/3",
+              "iconUrl": "http://localhost:8080/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://localhost:8080/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "The sub-task of the issue",
+              "iconUrl": "http://localhost:8080/images/icons/issuetypes/subtask_alternate.png",
+              "name": "Sub-task",
+              "subtask": true
+            }
+          }
+        },
+        {
+          "id": "10034",
+          "key": "ZAVA-12",
+          "self": "http://localhost:8080/rest/api/2/issue/10034",
+          "fields": {
+            "summary": "When the last task is done, the story can be automatically closed >> Drag this task to \"Done\" too",
+            "status": {
+              "self": "http://localhost:8080/rest/api/2/status/3",
+              "description": "This issue is being actively worked on at the moment by the assignee.",
+              "iconUrl": "http://localhost:8080/images/icons/statuses/inprogress.png",
+              "name": "In Progress",
+              "id": "3",
+              "statusCategory": {
+                "self": "http://localhost:8080/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Progress"
+              }
+            },
+            "priority": {
+              "self": "http://localhost:8080/rest/api/2/priority/3",
+              "iconUrl": "http://localhost:8080/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://localhost:8080/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "The sub-task of the issue",
+              "iconUrl": "http://localhost:8080/images/icons/issuetypes/subtask_alternate.png",
+              "name": "Sub-task",
+              "subtask": true
+            }
+          }
+        }
+      ],
+      "created": "2017-02-25T02:36:05.319+0100",
+      "reporter": {
+        "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+        "name": "rjvandoesburg",
+        "key": "rjvandoesburg",
+        "emailAddress": "example@test.com",
+        "avatarUrls": {
+          "48x48": "",
+          "24x24": "",
+          "16x16": "",
+          "32x32": ""
+        },
+        "displayName": "Robert-John van Doesburg",
+        "active": true,
+        "timeZone": "Europe/Amsterdam"
+      },
+      "customfield_10000": null,
+      "aggregateprogress": {
+        "progress": 600,
+        "total": 900,
+        "percent": 66
+      },
+      "priority": {
+        "self": "http://localhost:8080/rest/api/2/priority/3",
+        "iconUrl": "http://localhost:8080/images/icons/priorities/medium.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "customfield_10004": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@a3c4a13[id=3,rapidViewId=3,state=ACTIVE,name=Sample Sprint 2,startDate=2017-02-25T02:36:05.993+01:00,endDate=2017-03-11T02:56:05.994+01:00,completeDate=<null>,sequence=3]"
+      ],
+      "environment": null,
+      "timeestimate": 300,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "duedate": null,
+      "progress": {
+        "progress": 600,
+        "total": 900,
+        "percent": 66
+      },
+      "comment": {
+        "comments": [
+          {
+            "self": "http://localhost:8080/rest/api/2/issue/10032/comment/10020",
+            "id": "10020",
+            "author": {
+              "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+              "name": "rjvandoesburg",
+              "key": "rjvandoesburg",
+              "emailAddress": "example@test.com",
+              "avatarUrls": {
+                "48x48": "",
+                "24x24": "",
+                "16x16": "",
+                "32x32": ""
+              },
+              "displayName": "Robert-John van Doesburg",
+              "active": true,
+              "timeZone": "Europe/Amsterdam"
+            },
+            "body": "Joined Sample Sprint 2 7 days 9 hours 10 minutes ago",
+            "updateAuthor": {
+              "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+              "name": "rjvandoesburg",
+              "key": "rjvandoesburg",
+              "emailAddress": "example@test.com",
+              "avatarUrls": {
+                "48x48": "",
+                "24x24": "",
+                "16x16": "",
+                "32x32": ""
+              },
+              "displayName": "Robert-John van Doesburg",
+              "active": true,
+              "timeZone": "Europe/Amsterdam"
+            },
+            "created": "2017-02-25T02:36:05.319+0100",
+            "updated": "2017-02-25T02:36:05.319+0100"
+          }
+        ],
+        "maxResults": 1,
+        "total": 1,
+        "startAt": 0
+      },
+      "issuelinks": [],
+      "votes": {
+        "self": "http://localhost:8080/rest/api/2/issue/ZAVA-10/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 1,
+        "worklogs": [
+          {
+            "self": "http://localhost:8080/rest/api/2/issue/10032/worklog/10001",
+            "author": {
+              "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+              "name": "rjvandoesburg",
+              "key": "rjvandoesburg",
+              "emailAddress": "example@test.com",
+              "avatarUrls": {
+                "48x48": "",
+                "24x24": "",
+                "16x16": "",
+                "32x32": ""
+              },
+              "displayName": "Robert-John van Doesburg",
+              "active": true,
+              "timeZone": "Europe/Amsterdam"
+            },
+            "updateAuthor": {
+              "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+              "name": "rjvandoesburg",
+              "key": "rjvandoesburg",
+              "emailAddress": "example@test.com",
+              "avatarUrls": {
+                "48x48": "",
+                "24x24": "",
+                "16x16": "",
+                "32x32": ""
+              },
+              "displayName": "Robert-John van Doesburg",
+              "active": true,
+              "timeZone": "Europe/Amsterdam"
+            },
+            "comment": "Did some work",
+            "created": "2017-03-23T21:34:31.976+0100",
+            "updated": "2017-03-23T21:34:31.976+0100",
+            "started": "2017-03-23T21:34:00.000+0100",
+            "timeSpent": "10m",
+            "timeSpentSeconds": 600,
+            "id": "10001",
+            "issueId": "10032"
+          }
+        ]
+      },
+      "assignee": {
+        "self": "http://localhost:8080/rest/api/2/user?username=rjvandoesburg",
+        "name": "rjvandoesburg",
+        "key": "rjvandoesburg",
+        "emailAddress": "example@test.com",
+        "avatarUrls": {
+          "48x48": "",
+          "24x24": "",
+          "16x16": "",
+          "32x32": ""
+        },
+        "displayName": "Robert-John van Doesburg",
+        "active": true,
+        "timeZone": "Europe/Amsterdam"
+      },
+      "updated": "2017-03-23T21:34:31.977+0100",
+      "status": {
+        "self": "http://localhost:8080/rest/api/2/status/10000",
+        "description": "",
+        "iconUrl": "http://localhost:8080/",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "http://localhost:8080/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      }
+    }
+  },
+  "changelog": {
+    "id": "10213",
+    "items": [
+      {
+        "field": "timeestimate",
+        "fieldtype": "jira",
+        "from": "900",
+        "fromString": "900",
+        "to": "300",
+        "toString": "300"
+      },
+      {
+        "field": "timespent",
+        "fieldtype": "jira",
+        "from": "0",
+        "fromString": "0",
+        "to": "600",
+        "toString": "600"
+      },
+      {
+        "field": "WorklogId",
+        "fieldtype": "jira",
+        "from": "10001",
+        "fromString": "10001",
+        "to": null,
+        "toString": null
+      }
+    ]
+  }
+}
