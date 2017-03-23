@@ -1,4 +1,6 @@
-# Add a Jira webhook endpoint to your Laravel 5 application
+# Add a Jira webhook endpoint to your Laravel 5 application 
+
+[![Build Status](https://api.travis-ci.org/rjvandoesburg/laravel-jira-webhook.svg?branch=master)](https://travis-ci.org/rjvandoesburg/laravel-jira-webhook)
 
 This package adds a route to your laravel application to handle the webhook events sent by Jira 
 
