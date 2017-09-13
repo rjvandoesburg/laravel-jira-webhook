@@ -1,4 +1,4 @@
 <?php
 
-Route::post('jira/webhook', '\Atlassian\JiraWebhook\Http\Controllers\WebhookController@webhook')->name('jira-webhook');
+Route::post('jira/webhook/{event?}', '\Atlassian\JiraWebhook\Http\Controllers\WebhookController')->name('jira-webhook');
 
