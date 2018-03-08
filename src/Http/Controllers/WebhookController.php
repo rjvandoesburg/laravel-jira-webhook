@@ -51,13 +51,12 @@ class WebhookController
      */
     public function __invoke(Request $request, $event = null)
     {
-        $content = null;
+        $content = $request->all();
         if ($event !== null) {
-            $content = $request->query();
             $this->fireEvent($event, $content);
         } else if (! empty($body = $request->getContent())) {
-            $content = json_decode($body);
-            $this->fireEvent($content->webhookEvent, $content);
+            $body = json_decode($body, true);
+            $this->fireEvent($body->webhookEvent, $content);
         } else {
             $this->logger->critical('Failed to handle the webhook, check if you are passing a body or an eventname in the hook');
         }
