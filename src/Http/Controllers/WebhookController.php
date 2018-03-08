@@ -4,7 +4,7 @@ namespace Atlassian\JiraWebhook\Http\Controllers;
 
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Events\Dispatcher as EventDispatcher;
-use Illuminate\Contracts\Logging\Log;
+use Psr\Log\LoggerInterface;
 use Illuminate\Http\Request;
 
 /**
@@ -33,10 +33,10 @@ class WebhookController
      * WebhookController constructor.
      *
      * @param \Illuminate\Contracts\Events\Dispatcher $events
-     * @param \Illuminate\Contracts\Logging\Log $logger
+     * @param \Psr\Log\LoggerInterface $logger
      * @param \Illuminate\Contracts\Config\Repository $config
      */
-    public function __construct(EventDispatcher $events, Log $logger, ConfigRepository $config)
+    public function __construct(EventDispatcher $events, LoggerInterface $logger, ConfigRepository $config)
     {
         $this->events = $events;
         $this->logger = $logger;
@@ -55,7 +55,7 @@ class WebhookController
         if ($event !== null) {
             $this->fireEvent($event, $content);
         } else if (! empty($body = $request->getContent())) {
-            $body = json_decode($body, true);
+            $body = json_decode($body);
             $this->fireEvent($body->webhookEvent, $content);
         } else {
             $this->logger->critical('Failed to handle the webhook, check if you are passing a body or an eventname in the hook');

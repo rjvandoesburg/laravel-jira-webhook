@@ -27,7 +27,7 @@ abstract class BaseTestCase extends TestCase
 
     protected function callWebhook($data)
     {
-        $this->call('POST', 'jira/webhook', [], [], [], [], json_encode($data));
+        $this->postJson('jira/webhook', $data);
     }
 
     protected function getJiraEventData($event)
