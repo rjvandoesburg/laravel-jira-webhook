@@ -6,6 +6,7 @@ use Atlassian\JiraWebhook\JiraWebhookServiceProvider;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Testing\TestCase;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Str;
 
 abstract class BaseTestCase extends TestCase
 {
@@ -32,7 +33,7 @@ abstract class BaseTestCase extends TestCase
 
     protected function getJiraEventData($event)
     {
-        return file_get_contents(__DIR__.'/data/'.$event.'.json');
+        return file_get_contents(__DIR__.'/data/'.str_replace(':', '_', $event).'.json');
     }
 
     /**
