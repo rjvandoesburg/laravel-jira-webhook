@@ -55,7 +55,7 @@ class WebhookController
         if ($event !== null) {
             $this->fireEvent($event, $content);
         } else if (! empty($body = $request->getContent())) {
-            $body = json_decode($body);
+            $body = \json_decode($body, false);
             $this->fireEvent($body->webhookEvent, $content);
         } else {
             $this->logger->critical('Failed to handle the webhook, check if you are passing a body or an eventname in the hook');
